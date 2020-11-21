@@ -11,6 +11,8 @@ const travelSchema = new mongoose.Schema({
   endDate: { type: Date },
   places: { type: String },
   days: { type: String },
+  Expected: { type: String },
+  Budget: { type: Number },
   owner: { type: mongoose.Schema.Types.ObjectId, required: true, ref: "Users" },
   ownerName: { type: String, ref: "Users", required: true },
   ownerAge: { type: Number, ref: "Users", required: true },
